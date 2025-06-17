@@ -1,0 +1,102 @@
+/* Orbitz Responsive Build */
+
+/*
+    CSS Guide
+
+    1.  General Styles
+
+    Mobile
+    2.  
+
+    Tablet
+    t1. 
+
+    Desktop
+    d1. 
+
+ */
+
+
+ /* 1. ---General Styles--- */
+
+body {
+   color: #0B1E6E;
+   font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+a {
+   text-decoration: none;
+   transition: all .5s ease-in-out;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+/* 2. ---Main Nav--- */
+
+#main-nav button {
+   width: 20px;
+   height: 20px;
+   background: url(../images/burger.svg) no-repeat center;
+   margin-top: 15px;
+   transition: all .5s ease;
+   margin-bottom: 20px;
+   border: 0;
+   cursor: pointer;
+}
+
+#main-nav button.expanded {
+   transform: rotate(90deg);
+}
+
+#main-nav {
+   box-shadow: 5px #333;
+}
+
+#burger-con {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: none;
+}
+
+#burger-con.slide-toggle {
+   display: block;
+}
+
+#main-nav ul li a:hover {
+   color: #0B1E6E;
+}
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#main-nav ul li a {
+   display: block;
+   padding: 10px 0 10px 0;
+   text-align: center;
+   color: #626262;
+}
+
+#main-nav ul li {
+   border-bottom: 1px solid #efefef;
+}
+
+
+#main-nav ul li:first-child {
+   border-top: 1px solid #efefef;
+}
+
+#main-nav ul li:last-child {
+   margin-bottom: 10px;
+}
+
+#logo {
+   margin-bottom: 20px;
+   max-width: 280px;
+}

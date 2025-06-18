@@ -7,16 +7,21 @@
 
     Mobile
     2. Main Nav
-    3. Contact Us
-    4. Contact Form
-
-    Footer
+    3. Hero Section
+    4. Flavour Info
+    5. Customer Reviews
+    6. Contact Us
+    7. Contact Form
+    8. Footer
 
     Tablet
     t1. Main Nav
-    t2. Contact Us
-    t3. Contact Form
-    Footer
+    t2. Hero Section
+    t3. Flavour Info
+    t4. Customer Reviews
+    t5. Contact Us
+    t6. Contact Form
+    t7. Footer
 
     Desktop
     d1.
@@ -131,7 +136,188 @@ input, textarea {
 
 /* --- END Main Nav --- */
 
-/* 3. --- START Contact Us --- */
+/* --- 3. START Hero Section */
+
+.hero-image-con {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-main {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  white-space: nowrap;
+  color: #0B1E6E;
+  font-size: 32px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.shop-now-btn {
+  position: absolute;
+  background: #FDB52A;
+  color: #fff;
+  font-weight: bolder;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.shop-now-btn:hover {
+  background: #0B1E6E;
+}
+
+.wavy-line-hero {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+.wavy-line-hero svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.can-info-con {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#can-info-con {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.learn-more-btn {
+  position: absolute;
+  background: #FDB52A;
+  color: #fff;
+  font-weight: bolder;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.learn-more-btn:hover {
+  background: #0B1E6E;
+}
+
+.circle-wrapper {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.circle-wrapper img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.circle-blue {
+  background: #76B3D0;
+}
+
+.circle-green {
+  background: #D1D161;
+}
+
+.circle-pink {
+  background: #FEBAED;
+}
+
+.circle-orange {
+  background: #FF6C1F;
+}
+
+.shop-more-btn {
+  position: absolute;
+  background: #FDB52A;
+  color: #fff;
+  font-weight: bolder;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.shop-more-btn:hover {
+  background: #0B1E6E;
+}
+
+.wavy-line-reviews {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+.wavy-line-reviews svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scaleX(-1);
+}
+
+#reviews {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.circle-quote {
+  display: flex;
+}
+
+.circle {
+  background: #f9b6ec;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: grid;
+}
+
+.quote-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.quote-text p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* --- 3. END Hero Section */
+
+/* 6. --- START Contact Us --- */
 
 .contact-heading h3 {
     text-align: center;
@@ -180,7 +366,7 @@ input, textarea {
 
 /* --- END Contact Us --- */
 
-/* 4. --- START Contact Form --- */
+/* 7. --- START Contact Form --- */
 
 .contact-section {
   background-color: #78bdd5;
@@ -242,7 +428,7 @@ input, textarea {
 
 /* --- END Contact Form --- */
 
-/* --- START Footer --- */
+/* --- 8. START Footer --- */
 
 #footer-hero {
   background-color: #d3d25a;
@@ -366,7 +552,7 @@ input, textarea {
     align-items: center;
   }
 
-  /* --- t2. START of Contact Us --- */
+  /* --- t5. START of Contact Us --- */
 
   .contact-heading h3 {
     text-align: center;
@@ -390,13 +576,15 @@ input, textarea {
       display: block;
   }
 
- /* --- t2. END of Contact Us */ /* --- t3. START of Contact Form */
+ /* --- END of Contact Us */ 
+ 
+ /* --- t6. START of Contact Form */
 
  .contact-section {
       border-radius: 10px;
   }
 
- /* --- t3. END of Contact Form */
+ /* --- END of Contact Form */
 }
 
 /* End of Tablet */
@@ -404,8 +592,34 @@ input, textarea {
 /* Start of Desktop */
 
 @media screen and (min-width: 1200px) {
- 
-   /* d. --- Footer --- */
+  
+  /* --- d1. START Contact Us --- */
+
+  .contact-heading h3 {
+    font-size: 50px;
+  }
+
+  .contact-method img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .contact-method h3 {
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 28px;
+  }
+
+  .contact-method p {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+
+  /* --- END Contact Us --- */
+   
+  /* --- Footer --- */
 
    #email-signup {
     display: block;

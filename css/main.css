@@ -210,11 +210,11 @@ input, textarea {
 
 .learn-more-btn {
   position: absolute;
-  top: 88%;
+  top: 90%;
   background: #FDB52A;
   color: #fff;
   font-weight: bolder;
-  padding: 10px 28px;
+  padding: 8px 28px;
   border: none;
   border-radius: 10px;
   font-size: 18px;
@@ -287,16 +287,27 @@ input, textarea {
 
 /* --- 4. START Reviews --- */
 
-.circle {
-  background: #f9b6ec;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+.circle-quote {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 30px 0;
+}
+.circle-quote img {
+  width: 120px;
+  height: 120px;
 }
 
-.quote-icon {
-  width: 40px;
-  height: 40px;
+.circle-quote-right {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.circle-quote-right img {
+  width: 120px;
+  height: 120px;
+  transform: scaleX(-1);
 }
 
 .quote-text p {
@@ -615,7 +626,38 @@ input, textarea {
     font-size: 24px;
   }
 
+    .circle-wrapper {
+    width: 250px;
+    height: 250px;
+    margin: 120px 0;
+  }
+
+  .circle-wrapper img {
+    width: 400px;
+    height: auto;
+  }
+
+  .shop-more-btn {
+    padding: 10 px 28px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
   /* --- END Flavour Info */
+
+  /* --- START Reviews */
+
+  .circle-quote img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .circle-quote-right img {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* --- END Reviews */
 
   /* --- d3. START Contact Us --- */
 

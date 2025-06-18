@@ -183,7 +183,7 @@ input, textarea {
 .wavy-line-hero {
     width: 100%;
     max-width: 100%;
-    margin-top: 25px;
+    margin: 25px 0;
 }
 
 .wavy-line-hero svg {
@@ -200,7 +200,7 @@ input, textarea {
   align-items: center;
 }
 
-#can-info-con {
+#can-main {
   display: block;
   width: 100%;
   height: auto;
@@ -230,7 +230,7 @@ input, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 50px 0;
   position: relative;
 }
 

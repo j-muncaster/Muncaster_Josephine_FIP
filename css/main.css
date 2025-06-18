@@ -13,19 +13,27 @@
     Footer
 
     Tablet
-    t1. 
+    t1. Main Nav
+    t2. Contact Us
+    t3. Contact Form
+    Footer
 
     Desktop
-    d1. 
+    d1.
+    Footer
 
  */
 
 
- /* 1. ---General Styles--- */
+ /* 1. --- General Styles --- */
+
+@import url("https://p.typekit.net/p.css?s=1&k=hnb1odn&ht=tk&f=37516.37522.37524.37526&a=167776030&app=typekit&e=css");
 
 body {
    color: #0B1E6E;
-   font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+   font-family: 'poppins', sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
 a {
@@ -39,7 +47,7 @@ input, textarea {
    padding: 0;
 }
 
-/* 2. --- Main Nav --- */
+/* 2. --- Start Main Nav --- */
 
 #main-nav button {
    width: 28px;
@@ -54,18 +62,26 @@ input, textarea {
    transform: rotate(90deg);
 }
 
-#main-nav {
-  background-color: #D1D161;
-  display: grid; 
+#main-nav { 
   grid-template-columns: repeat(4, 1fr); 
-  align-items: center; 
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #D1D161;
   padding: 10px 10px;
+  position: relative;
+  z-index: 2;
 }
 
 #burger-con {
-   margin-top: 20px;
-   margin-bottom: 20px;
-   display: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #D1D161;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  z-index: 1;
 }
 
 #burger-con.slide-toggle {
@@ -94,16 +110,16 @@ input, textarea {
 }
 
 #logo img {
-  max-width: 100%;
-  max-height: 60px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-self: center;
+  align-items: center;
 }
 
 #header-icons {
+  grid-column: 4 / 4;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   gap: 15px;
 }
 
@@ -113,7 +129,9 @@ input, textarea {
   cursor: pointer;
 }
 
-/* 3. --- Contact Us --- */
+/* --- END Main Nav --- */
+
+/* 3. --- START Contact Us --- */
 
 .contact-heading h3 {
     text-align: center;
@@ -160,7 +178,9 @@ input, textarea {
   margin-bottom: 40px;
 }
 
-/* 4. --- Contact Form --- */
+/* --- END Contact Us --- */
+
+/* 4. --- START Contact Form --- */
 
 .contact-section {
   background-color: #78bdd5;
@@ -220,7 +240,9 @@ input, textarea {
   background-color: #001a4d;
 }
 
-/* Footer */
+/* --- END Contact Form --- */
+
+/* --- START Footer --- */
 
 #footer-hero {
   background-color: #d3d25a;
@@ -238,7 +260,7 @@ input, textarea {
   margin: 0 auto;
 }
 
-#footer-nav h3 {
+#footer-nav h2 {
   font-weight: bold;
   margin-top: 8px;
 }
@@ -263,8 +285,168 @@ input, textarea {
   align-items: center;
 }
 
+#email-signup {
+  display: none;
+}
+
 #footer-privacy {
   display: flex;
   align-items: center;
   font-size: 16px;
 }
+
+/* --- END Footer --- */
+
+/* Start of Tablet */
+
+@media screen and (min-width: 768px) {
+
+  /* --- t1. START Main Nav */
+
+  #sticky-nav-con {
+      position: sticky;
+      top: 0px;
+      background-color: #D1D161;
+      z-index: 1;
+   }
+
+   #main-nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+   }
+
+   #main-nav ul li a {
+      display: inline;
+   }
+
+   #button {
+      display: none;
+   }
+
+   #logo {
+      grid-column: 1 / span 2;
+      justify-content: start;
+      order: -1;
+      margin-top: 15px;
+      max-width: 200px;
+   }
+
+   #burger-con {
+    grid-column: 5 / span 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: auto 0;
+   }
+
+  #burger-con ul {
+    display: flex;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+   }
+
+  #burger-con ul li {
+   list-style: none;
+   }
+
+  #burger-con ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #0B1E6E;
+   }
+
+  #header-icons {
+    grid-column: 10 / span 3;
+    justify-self: end;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  /* --- t2. START of Contact Us --- */
+
+  .contact-heading h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+  }
+
+  .wavy-line-con {
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+      max-width: 100vw;
+  }
+
+  .wavy-line-con img {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+ /* --- t2. END of Contact Us */ /* --- t3. START of Contact Form */
+
+ .contact-section {
+      border-radius: 10px;
+  }
+
+ /* --- t3. END of Contact Form */
+}
+
+/* End of Tablet */
+
+/* Start of Desktop */
+
+@media screen and (min-width: 1200px) {
+ 
+   /* d. --- Footer --- */
+
+   #email-signup {
+    display: block;
+   }
+
+   #email-signup h3 {
+    font-size: 24px;
+   }
+
+   #email-signup input[type="email"] {
+      background-color: #f5f5f5;
+      border: 5px solid #FEBAED;
+      border-radius: 15px;
+      outline: none;
+      padding: 16px;
+      font-size: 16px;
+      color: #1a237e;
+      font-family: inherit;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+   #email-signup input[type="submit"] {
+      background-color: #05216b;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+    }
+
+    #email-signup input[type="submit"]:hover {
+      background-color: #001a4d;
+    }
+
+   /* d. --- END Footer --- */
+
+
+  }
+/* End of Desktop */

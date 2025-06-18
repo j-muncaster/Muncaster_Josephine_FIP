@@ -16,18 +16,15 @@
 
     Tablet
     t1. Main Nav
-    t2. Hero Section
-    t3. Flavour Info
-    t4. Customer Reviews
-    t5. Contact Us
-    t6. Contact Form
-    t7. Footer
+    t2. Contact Us
+    t3. Contact Form
 
     Desktop
     d1. Hero Section
     d2. Flavour Info
-    d3. Contact Us
-    Footer
+    d3. Reviews
+    d4. Contact Us
+    d5. Footer
 
  */
 
@@ -54,7 +51,7 @@ input, textarea {
    padding: 0;
 }
 
-/* 2. --- Start Main Nav --- */
+/* 2. --- START Main Nav --- */
 
 #main-nav button {
    width: 28px;
@@ -138,7 +135,7 @@ input, textarea {
 
 /* --- END Main Nav --- */
 
-/* --- 3. START Hero Section */
+/* --- 3. START Hero Section --- */
 
 .hero-image-con {
   position: relative;
@@ -181,6 +178,10 @@ input, textarea {
 .shop-now-btn:hover {
   background: #0B1E6E;
 }
+
+/* --- END Hero Section --- */
+
+/* --- 4. START Flavour Info --- */
 
 .wavy-line-hero {
     width: 100%;
@@ -234,7 +235,6 @@ input, textarea {
   justify-content: center;
   margin: 50px 0;
   position: relative;
-  overflow: none;
 }
 
 .circle-wrapper img {
@@ -283,9 +283,9 @@ input, textarea {
   background: #0B1E6E;
 }
 
-/* --- 3. END Hero Section */
+/* --- END Flavour Info */
 
-/* --- 4. START Reviews --- */
+/* --- 5. START Reviews --- */
 
 .circle-quote {
   display: flex;
@@ -325,14 +325,14 @@ input, textarea {
     transform: scaleX(-1);
 }
 
-#reviews {
+.reviews {
   width: 100%;
   margin: 0 auto;
 }
 
-/* --- 4. END Reviews --- */
+/* --- END Reviews --- */
 
-/* 6. --- START Contact Us --- */
+/* --- 6. START Contact Us --- */
 
 .contact-heading h3 {
     text-align: center;
@@ -381,7 +381,7 @@ input, textarea {
 
 /* --- END Contact Us --- */
 
-/* 7. --- START Contact Form --- */
+/* --- 7. START Contact Form --- */
 
 .contact-section {
   background-color: #78bdd5;
@@ -563,7 +563,9 @@ input, textarea {
     grid-column: 11 / span 1;
   }
 
-  /* --- t5. START of Contact Us --- */
+  /* --- END Main Nav --- */
+
+  /* --- t2. START of Contact Us --- */
 
   .contact-heading h3 {
     text-align: center;
@@ -587,15 +589,15 @@ input, textarea {
       display: block;
   }
 
- /* --- END of Contact Us */ 
+ /* --- END of Contact Us --- */ 
  
- /* --- t6. START of Contact Form */
+ /* --- t3. START of Contact Form --- */
 
  .contact-section {
       border-radius: 10px;
   }
 
- /* --- END of Contact Form */
+ /* --- END of Contact Form --- */
 }
 
 /* End of Tablet */
@@ -638,14 +640,14 @@ input, textarea {
   }
 
   .shop-more-btn {
-    padding: 10 px 28px;
+    padding: 10px 28px;
     font-size: 24px;
     margin-bottom: 20px;
   }
 
-  /* --- END Flavour Info */
+  /* --- END Flavour Info --- */
 
-  /* --- START Reviews */
+  /* --- d3. START Reviews --- */
 
   .circle-quote img {
     width: 180px;
@@ -657,9 +659,9 @@ input, textarea {
     height: 180px;
   }
 
-  /* --- END Reviews */
+  /* --- END Reviews --- */
 
-  /* --- d3. START Contact Us --- */
+  /* --- d4. START Contact Us --- */
 
   .contact-heading h3 {
     font-size: 50px;
@@ -685,7 +687,7 @@ input, textarea {
 
   /* --- END Contact Us --- */
    
-  /* --- Footer --- */
+  /* --- d5. Footer --- */
 
    #email-signup {
     display: block;
@@ -726,7 +728,6 @@ input, textarea {
     }
 
    /* d. --- END Footer --- */
-
-
   }
+
 /* End of Desktop */

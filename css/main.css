@@ -24,7 +24,9 @@
     t7. Footer
 
     Desktop
-    d1.
+    d1. Hero Section
+    d2. Flavour Info
+    d3. Contact Us
     Footer
 
  */
@@ -154,17 +156,18 @@ input, textarea {
 
 .overlay-text {
   position: absolute;
+  top: 5%;
   white-space: nowrap;
   color: #0B1E6E;
   font-size: 32px;
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
-  z-index: 2;
 }
 
 .shop-now-btn {
   position: absolute;
+  top: 80%;
   background: #FDB52A;
   color: #fff;
   font-weight: bolder;
@@ -173,7 +176,6 @@ input, textarea {
   border-radius: 10px;
   font-size: 18px;
   cursor: pointer;
-  z-index: 2;
 }
 
 .shop-now-btn:hover {
@@ -208,15 +210,15 @@ input, textarea {
 
 .learn-more-btn {
   position: absolute;
+  top: 88%;
   background: #FDB52A;
   color: #fff;
   font-weight: bolder;
-  padding: 16px 32px;
+  padding: 10px 28px;
   border: none;
   border-radius: 10px;
   font-size: 18px;
   cursor: pointer;
-  z-index: 2;
 }
 
 .learn-more-btn:hover {
@@ -232,6 +234,7 @@ input, textarea {
   justify-content: center;
   margin: 50px 0;
   position: relative;
+  overflow: none;
 }
 
 .circle-wrapper img {
@@ -257,8 +260,15 @@ input, textarea {
   background: #FF6C1F;
 }
 
+.shop-info-con {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .shop-more-btn {
-  position: absolute;
   background: #FDB52A;
   color: #fff;
   font-weight: bolder;
@@ -267,42 +277,21 @@ input, textarea {
   border-radius: 10px;
   font-size: 18px;
   cursor: pointer;
-  z-index: 2;
 }
 
 .shop-more-btn:hover {
   background: #0B1E6E;
 }
 
-.wavy-line-reviews {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 25px;
-}
+/* --- 3. END Hero Section */
 
-.wavy-line-reviews svg {
-    width: 100%;
-    height: auto;
-    display: block;
-    transform: scaleX(-1);
-}
-
-#reviews {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.circle-quote {
-  display: flex;
-}
+/* --- 4. START Reviews --- */
 
 .circle {
   background: #f9b6ec;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  position: relative;
-  display: grid;
+  width: 100px;
+  height: 100px;
 }
 
 .quote-icon {
@@ -312,10 +301,25 @@ input, textarea {
 
 .quote-text p {
   font-size: 16px;
-  margin: 0;
 }
 
-/* --- 3. END Hero Section */
+.wavy-line-reviews {
+    width: 100%;
+    max-width: 100%;
+}
+
+.wavy-line-reviews svg {
+    width: 100%;
+    display: block;
+    transform: scaleX(-1);
+}
+
+#reviews {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* --- 4. END Reviews --- */
 
 /* 6. --- START Contact Us --- */
 
@@ -511,31 +515,31 @@ input, textarea {
    }
 
    #logo {
-      grid-column: 1 / span 2;
-      justify-content: start;
+      grid-column: 1 / span 3;
       order: -1;
       margin-top: 15px;
       max-width: 200px;
    }
 
    #burger-con {
-    grid-column: 5 / span 6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin: auto 0;
+    grid-column: 4 / span 7;
+    display: block;
+    top: 45%;
    }
 
   #burger-con ul {
     display: flex;
-    gap: 35px;
     padding: 0;
-    margin: 0;
    }
 
   #burger-con ul li {
    list-style: none;
+   padding-right: 10px;
+   margin: 0px auto;
+   }
+
+   #burger-con ul li:last-child {
+    padding-right: 0;
    }
 
   #burger-con ul li a {
@@ -545,11 +549,7 @@ input, textarea {
    }
 
   #header-icons {
-    grid-column: 10 / span 3;
-    justify-self: end;
-    display: flex;
-    gap: 15px;
-    align-items: center;
+    grid-column: 11 / span 1;
   }
 
   /* --- t5. START of Contact Us --- */
@@ -593,7 +593,31 @@ input, textarea {
 
 @media screen and (min-width: 1200px) {
   
-  /* --- d1. START Contact Us --- */
+  /* --- d1. START Hero Section --- */
+
+  .overlay-text {
+    font-size: 52px;
+  }
+
+  .shop-now-btn {
+    top: 85%;
+    padding: 18px 32px;
+    font-size: 24px;
+  }
+
+  /* --- END Hero Section --- */
+
+  /* --- d2. START Flavour Info --- */
+
+  .learn-more-btn {
+    top: 92%;
+    padding: 10px 28px;
+    font-size: 24px;
+  }
+
+  /* --- END Flavour Info */
+
+  /* --- d3. START Contact Us --- */
 
   .contact-heading h3 {
     font-size: 50px;

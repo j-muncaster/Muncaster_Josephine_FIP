@@ -3,49 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='link rel="stylesheet" href="https://use.typekit.net/ybu0ehc.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.typekit.net/hnb1odn.css">
     <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
     <title>Orbitz Contact Page</title>
 </head>
-
-<!-- any empty classes are for col-spans -->
 
 <body>
     <h1 class="hidden">Welcome to Orbitz</h1>
 
     <!-- Main Nav -->
     <div id="sticky-nav-con">
-        <header class="grid-con" id="main-nav">
+        <header id="main-nav">
             <h2 class="hidden">Main Navigation</h2>
 
-                <div id="nav-top" class="col-span-full">
-                    <nav id="main-nav">
-                        <button id="button" class="col-span-1"></button>
-                        
-                        <div id="logo" class="col-span-2">
-                            <a href="index.html">
-                                <img src="images/orbitz_logo.svg" alt="Orbitz Logo"/>
-                            </a>
-                        </div>
+            <button id="button" class="col-span-1"></button>
+            
+            <div id="logo">
+            <a href="index.html">
+                <img src="images/orbitz_logo.svg" alt="Orbitz Logo"/>
+            </a>
+            </div>
 
-                        <div id="header-icons" class="col-span-1">
-                            <img src="images/search_icon.png" alt="Search Icon">
-                            <img src="images/shopping_icon.png" alt="Shopping Bag Icon">
-                        </div>
-                    </nav>
-                </div>
+            <div id="burger-con">
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Flavours</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            </div>
 
-                <div id="burger-con" class="col-span-full">
-                    <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Flavours</a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
+            <div id="header-icons">
+            <img src="images/search_icon.png" alt="Search Icon">
+            <img src="images/shopping_icon.png" alt="Shopping Bag Icon">
+            </div>
         </header>
     </div>
+
 
     <!-- Contact Us -->
     <section class="grid-con" id="contact-info">
@@ -92,25 +87,39 @@
         <div class="grid-con">
 
             <nav id="footer-nav">
-            <h2 class="hidden">Footer Nav</h2>
-            <ul>
-                <h3>Shop</h3>
-                <li><a href="#">Shop Orbitz</a></li>
-                <li><a href="#">Find in Store</a></li>
+                <h2 class="hidden">Footer Nav</h2>
+            
+                <h2>Shop</h2>
+                    <ul>
+                        <li><a href="#">Shop Orbitz</a></li>
+                        <li><a href="#">Find in Store</a></li>
+                    </ul>
 
-                <h3>Learn</h3>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Health & Ingredients</a></li>
+                <h2>Learn</h2>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Health & Ingredients</a></li>
+                    </ul>
 
-                <h3>More</h3>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+                <h2>More</h2>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
             </nav>
 
+            <div id="email-signup" class="l-col-span-4 l-col-start-6">
+                <h3>Join the Orbitz Journey</h3>
+                <p>Be the first to know about news, upcoming releases & more!</p>
+                <form action="#" method="post">
+                    <input name="contactInfo" type="email" required placeholder="Enter Email">
+                    <input name="submit" type="submit" value="Submit">
+                </form>
+            </div>
+
             <div id="social-icons" class="col-span-full">
-                <img src="images/instagram_icon.png" alt="Instagram Icon">
-                <img src="images/tiktok_icon.png" alt="TikTok Icon">
-                <img src="images/youtube_icon.png" alt="YouTube Icon">
+                <a href="#"><img src="images/instagram_icon.png" alt="Instagram Icon"></a>
+                <a href="#"><img src="images/tiktok_icon.png" alt="TikTok Icon"></a>
+                <a href="#"><img src="images/youtube_icon.png" alt="YouTube Icon"></a>
             </div>
 
             <div id="footer-privacy" class="col-span-full">

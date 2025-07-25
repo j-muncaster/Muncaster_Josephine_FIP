@@ -62,16 +62,11 @@
                             <path d="M-37 144.818C144.476 76.8176 574.464 -39.3137 818.286 32.7611C1046.71 100.283 1039.84 173.551 1180.67 223.833C1287.84 262.098 1391.91 215.213 1440 173.551" stroke="#FEBAED" stroke-width="20"/>
                         </svg>
                     </div>
-                    
-                    <div class="can-info-con">
-                        <h3 class="hidden">Orbitz Can Info</h3>
-                            <img src="images/info_photo.jpg" alt="Lemon Orbitz Can Info" id="can-main">
-                            <button class="learn-more-btn">Learn More</button>
-                    </div>
                 </div>
 
-                <div class="grid-con">
+                <div class="grid-con flavour-grid">
                     <h3 class="hidden">Orbitz Can Flavours</h3>
+                    
                         <div class="circle-wrapper circle-blue col-span-1">
                             <img src="images/blueberry_img.png" alt="Blueberry Can">
                         </div>
@@ -84,31 +79,129 @@
                             <img src="images/raspberry_img.png" alt="Raspberry Can">
                         </div>
 
-                        <div class="circle-wrapper circle-orange col-span-1">
-                            <img src="images/orange_img.png" alt="Orange">
+                        <div class="circle-wrapper circle-orange col-span-1 hide-mobile">
+                            <img src="images/orange_img.png" alt="Orange" id="orange-can">
                         </div>
                 </div>
 
                 <div class="shop-info-con">
-                    <button class="shop-more-btn">Shop More</button>
-                </div>
-
-                <div id="hero-video">
-                    <h3 class="hidden">Orbitz Video</h3>
-                        <div class="box">
-                            <img src="images/play_icon.png" alt="Play Button Icon">
-                        </div>
+                    <button class="shop-more-btn">Shop All</button>
                 </div>
         </section>
 
+        <!-- Health & Ingredients Section - Mobile Only -->
+        <section class="ingredients-section mobile-only">
+            <h2>Health & Ingredients</h2>
+            <p>Orbitz is made with your wellness in mind.</p>
+
+            <details class="drop-down-item">
+                <summary>
+                    <img src="images/water-icon.png" alt="Water Icon">
+                    <span>Sparkling Mineral Water</span>
+                    <img src="images/arrow-down-icon.png" alt="Arrow Down Icon" class="arrow">
+                </summary>
+                    <p>Orbitz begins with clean, mineral-rich water—sourced for purity and balance. These naturally occurring minerals, like calcium, magnesium, and potassium, help support hydration, bone health, and energy production. Unlike purified or distilled waters, mineral water contains trace elements that nourish your body on a cellular level. It’s a crisp, refreshing base that brings every flavor of Orbitz to life.</p>
+            </details>
+
+            <details class="drop-down-item">
+                <summary>
+                    <img src="images/orange-icon.png" alt="Orange Slice Icon">
+                    <span>Organic Fruit</span>
+                    <img src="images/arrow-down-icon.png" alt="Arrow Down Icon" class="arrow">
+                </summary>
+                    <p>Each bottle of Orbitz is infused with real organic fruit, chosen for both taste and function. From tangy raspberry to mellow melon, our fruity blends are made without artificial sweeteners or synthetic flavors—just clean, certified organic ingredients. These fruits offer natural antioxidants, subtle sweetness, and a vibrant experience with every sip. It’s nature’s flavor, exactly as it should be.</p>
+            </details>
+
+            <details class="drop-down-item">
+                <summary>
+                    <img src="images/plant-icon.png" alt="Plant Icon">
+                    <span>Chicory Root Fibre</span>
+                    <img src="images/arrow-down-icon.png" alt="Arrow Down Icon" class="arrow">
+                </summary>
+                    <p>Chicory root fibre is one of nature’s most effective prebiotics, and a cornerstone ingredient in Orbitz. Extracted from the root of the chicory plant, this soluble fibre feeds the beneficial bacteria in your gut, helping to support digestion and maintain microbiome balance. It’s gentle, plant-based, and shown to improve regularity and gut health over time. Plus, it blends seamlessly into our sparkling flavors—so all you taste is refreshment.</p>
+            </details>
+
+            <details class="drop-down-item">
+                <summary>
+                    <img src="images/probiotics-icon.png" alt="Prebiotics Icon">
+                    <span>Prebiotics</span>
+                    <img src="images/arrow-down-icon.png" alt="Arrow Down Icon" class="arrow">
+                </summary>
+                    <p>Orbitz delivers a daily dose of prebiotics to help you feel balanced from the inside out. Prebiotics act as fuel for your body’s good bacteria, promoting digestive wellness, improved immunity, and better nutrient absorption. Unlike probiotics, prebiotics are more shelf-stable and consistent, offering gut support without needing refrigeration. With Orbitz, you’re nourishing your microbiome in every bubbly sip.</p>
+            </details>
+        </section>
+
+        <!-- Health & Ingredients Section - Desktop Only -->
+
+        <section class="ingredients-section desktop-only">
+            <h2>Health & Ingredients</h2>
+            <p>Orbitz is made with your wellness in mind.</p>
+
+            <div class="ingredient-item">
+                <div class="ingredient-header">
+                    <img src="images/water-icon.png" alt="Water Icon">
+                    <span>Sparkling Mineral Water</span>
+                </div>
+                <p>Orbitz begins with clean, mineral-rich water—sourced for purity and balance. These naturally occurring minerals, like calcium, magnesium, and potassium, help support hydration, bone health, and energy production. Unlike purified or distilled waters, mineral water contains trace elements that nourish your body on a cellular level. It’s a crisp, refreshing base that brings every flavor of Orbitz to life.</p>
+            </div>
+
+            <div class="ingredient-item">
+                <div class="ingredient-header">
+                    <img src="images/orange-icon.png" alt="Orange Slice Icon">
+                    <span>Organic Fruit</span>
+                </div>
+                <p>Each bottle of Orbitz is infused with real organic fruit, chosen for both taste and function. From tangy raspberry to mellow melon, our fruity blends are made without artificial sweeteners or synthetic flavors—just clean, certified organic ingredients. These fruits offer natural antioxidants, subtle sweetness, and a vibrant experience with every sip. It’s nature’s flavor, exactly as it should be.</p>
+            </div>
+
+            <div class="ingredient-item">
+                <div class="ingredient-header">
+                    <img src="images/plant-icon.png" alt="Plant Icon">
+                    <span>Chicory Root Fibre</span>
+                </div>
+                <p>Chicory root fibre is one of nature’s most effective prebiotics, and a cornerstone ingredient in Orbitz. Extracted from the root of the chicory plant, this soluble fibre feeds the beneficial bacteria in your gut, helping to support digestion and maintain microbiome balance. It’s gentle, plant-based, and shown to improve regularity and gut health over time. Plus, it blends seamlessly into our sparkling flavors—so all you taste is refreshment.</p>
+            </div>
+
+            <div class="ingredient-item">
+                <div class="ingredient-header">
+                    <img src="images/probiotics-icon.png" alt="Prebiotics Icon">
+                    <span>Prebiotics</span>
+                </div>
+                <p>Orbitz delivers a daily dose of prebiotics to help you feel balanced from the inside out. Prebiotics act as fuel for your body’s good bacteria, promoting digestive wellness, improved immunity, and better nutrient absorption. Unlike probiotics, prebiotics are more shelf-stable and consistent, offering gut support without needing refrigeration. With Orbitz, you’re nourishing your microbiome in every bubbly sip.</p>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="our-story">
+            <h2 class="hidden">Our Story</h2>
+
+                <div class="wavy-line-reviews col-span-full">
+                    <svg width="1440" height="249" viewBox="0 0 1440 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-37 144.818C144.476 76.8176 574.464 -39.3137 818.286 32.7611C1046.71 100.283 1039.84 173.551 1180.67 223.833C1287.84 262.098 1391.91 215.213 1440 173.551" stroke="#FEBAED" stroke-width="20"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <h3>Our Story</h3>
+                        <p> Born from Balance. Crafted by Women. Rooted in Wellness.<br>
+                            Orbitz began as a simple idea: what if feeling good could feel joyful, fizzy, and full of nature’s brilliance?<br>
+                            Created by women who wanted more from their daily drink—a blend of nourishment, energy, and elegance—Orbitz was 
+                            imagined as a ritual of restoration. Something that didn’t just hydrate, but supported the whole self: gut, mood, body, and spirit.<br>
+                            Backed by science and inspired by nature, each bottle combines prebiotic fiber with organic botanicals and fruity effervescence to help 
+                            women bloom through busy days, cycles, and seasons.<br>
+                            We believe wellness should orbit around you—your flow, your pace, your glow. With every sip of Orbitz, you’re not just drinking—you’re 
+                            thriving from within. It’s wellness in motion.
+                        </p>
+                </div>
+
+                <div>
+                    <!-- Insert Orbitz Commercial Ad Video Here -->
+                </div>
+
+        </section>
+        
         <!-- Customer Reviews -->
         <section class="customer-reviews">
             <h2 class="hidden">Customer Reviews</h2>
-                <div class="wavy-line-reviews col-span-full">
-                    <svg width="1440" height="249" viewBox="0 0 1440 249" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M-37 144.818C144.476 76.8176 574.464 -39.3137 818.286 32.7611C1046.71 100.283 1039.84 173.551 1180.67 223.833C1287.84 262.098 1391.91 215.213 1440 173.551" stroke="#FDB52A" stroke-width="20"/>
-                    </svg>
-                </div>
 
                 <div class="reviews grid-con">
                     <div class="col-span-full">

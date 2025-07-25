@@ -9,10 +9,12 @@
     2. Main Nav
     3. Hero Section
     4. Flavour Info
-    5. Customer Reviews
-    6. Contact Us
-    7. Contact Form
-    8. Footer
+    5. Health & Ingredients
+    6. Our Story
+    7. Customer Reviews
+    8. Contact Us
+    9. Contact Form
+    10. Footer
 
     Tablet
     t1. Main Nav
@@ -194,38 +196,8 @@ input, textarea {
     display: block;
 }
 
-.can-info-con {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#can-main {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.learn-more-btn {
-  position: absolute;
-  top: 90%;
-  background: #FDB52A;
-  color: #fff;
-  font-weight: bolder;
-  padding: 8px 28px;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.learn-more-btn:hover {
-  background: #0B1E6E;
-}
-
 .circle-wrapper {
+  grid-column: span 1;
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -233,7 +205,6 @@ input, textarea {
   align-items: center;
   justify-content: center;
   margin: 50px 0;
-  position: relative;
 }
 
 .circle-wrapper img {
@@ -255,8 +226,16 @@ input, textarea {
   background: #FEBAED;
 }
 
-.circle-orange {
-  background: #FF6C1F;
+.flavour-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.hide-mobile {
+  display: none;
 }
 
 .shop-info-con {
@@ -284,7 +263,101 @@ input, textarea {
 
 /* --- END Flavour Info */
 
-/* --- 5. START Reviews --- */
+/* --- 5. START Health & Ingredients --- */
+
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.ingredients-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 32px;
+  font-style: bold;
+  color: #001D7E;
+}
+
+.ingredients-section h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.ingredients-section p {
+  text-align: center;
+}
+
+.ingredients-section span {
+  text-transform: uppercase;
+}
+
+.drop-down-item {
+  border-top: 1px solid #001D7E;
+  padding: 16px 0;
+}
+
+.drop-down-item summary {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.drop-down-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.drop-down-item span {
+  font-weight: bold;
+}
+
+.drop-down-item p {
+  padding: 16px 0 0 56px;
+}
+
+.drop-down-item .arrow {
+  justify-self: end;
+  width: 30px;
+  height: auto;
+}
+
+.drop-down-item p {
+  display: none;
+}
+
+.drop-down-item[open] p {
+  display: block;
+}
+
+/* --- END Health & Ingredients --- */
+
+/* ---6. START Our Story --- */
+
+.our-story h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+.our-story p {
+  margin: 30px;
+}
+
+.our-story br {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* --- END Our Story --- */
+
+/* --- 7. START Reviews --- */
 
 .circle-quote {
   display: flex;
@@ -331,7 +404,7 @@ input, textarea {
 
 /* --- END Reviews --- */
 
-/* --- 6. START Contact Us --- */
+/* --- 8. START Contact Us --- */
 
 #contact-image-con {
   width: 100vw;
@@ -397,7 +470,7 @@ input, textarea {
 
 /* --- END Contact Us --- */
 
-/* --- 7. START Contact Form --- */
+/* --- 9. START Contact Form --- */
 
 .contact-section {
   background-color: #78bdd5;
@@ -459,7 +532,7 @@ input, textarea {
 
 /* --- END Contact Form --- */
 
-/* --- 8. START Footer --- */
+/* --- 10. START Footer --- */
 
 #footer-hero {
   background-color: #d3d25a;
@@ -581,7 +654,61 @@ input, textarea {
 
   /* --- END Main Nav --- */
 
-  /* --- t2. START of Contact Us --- */
+  /* --- t2. START Flavours --- */
+
+ .flavour-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .circle-wrapper {
+    grid-column: span 3;
+  }
+
+  .circle-orange {
+    background-color: #FF6C1F;
+  }
+
+  .hide-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* --- END Flavours --- */
+
+  /* --- t3. START Health & Ingredients --- */
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .ingredient-item {
+    margin-bottom: 24px;
+  }
+
+  .ingredient-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ingredient-item span {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .arrow {
+    display: none; 
+  }
+
+  /* --- END Health & Ingredients --- */
+
+  /* --- t4. START of Contact Us --- */
 
   .contact-heading h3 {
     text-align: center;
@@ -607,7 +734,7 @@ input, textarea {
 
  /* --- END of Contact Us --- */ 
  
- /* --- t3. START of Contact Form --- */
+ /* --- t4. START of Contact Form --- */
 
  .contact-section {
       border-radius: 10px;

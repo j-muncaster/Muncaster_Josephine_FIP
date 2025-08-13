@@ -616,12 +616,11 @@ input, textarea {
 }
 
 .product-image {
-  width: auto;
-  height: auto;
-  margin-bottom: 0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .product-image img {
@@ -707,6 +706,41 @@ input, textarea {
 .cart-btn:hover {
   background-color: #FDB52A;
   color: white;
+}
+
+.product-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.80);
+  display: none;
+  border-radius: 10px;
+  text-align: center;
+  color: #0B1E6E;
+  padding: 15px;
+  box-sizing: border-box;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #FDB52A;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #0B1E6E;
+}
+
+.product-popup.active {
+  display: block;
 }
 
 /* --- END Shop Flavours */

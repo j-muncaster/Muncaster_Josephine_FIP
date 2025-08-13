@@ -571,6 +571,134 @@ input, textarea {
 
 /* --- END Contact Form --- */
 
+/* --- START Shop Flavours --- */
+
+.flavours-text-con h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+.flavours-text-con p {
+  margin: 30px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.product-item {
+  text-align: center;
+  padding: 10px 8px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.product-image {
+  width: auto;
+  height: auto;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-info {
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.product-item-pink {
+  background-color: #FEBAED;
+}
+
+.product-item-green {
+  background-color: #D1D161;
+}
+
+.product-item-blue {
+  background-color: #76B3D0;
+}
+
+.product-item-orange {
+  background-color: #FF6C1F;
+}
+
+.product-item-purple {
+  background-color: #0B1E6E;
+}
+
+.product-item-yellow {
+  background-color: #FDB52A;
+}
+
+.product-item-pink .product-image {
+  background-color: #FEBAED;
+}
+
+.product-item-green .product-image {
+  background-color: #D1D161;
+}
+
+.product-item-blue .product-image {
+  background-color: #76B3D0;
+}
+
+.product-item-orange .product-image {
+  background-color: #FF6C1F;
+}
+
+.product-item-purple .product-image {
+  background-color: #0B1E6E;
+}
+
+.product-item-yellow .product-image {
+  background-color: #FDB52A;
+}
+
+.product-info h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+}
+
+.cart-btn {
+  display: inline-block;
+  background-color: white;
+  color: #0B1E6E;
+  border: none;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background-color: #FDB52A;
+  color: white;
+}
+
+/* --- END Shop Flavours */
+
 /* --- START Variety Pack --- */
 
 .variety-pack h3 {
@@ -983,6 +1111,16 @@ input, textarea {
   }
 
   /* --- END Contact Us --- */
+
+  /* --- START Shop Flavours --- */
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+  }
+
+  /* --- END Shop Flavours --- */
 
   /* --- START Find us in Store --- */
 

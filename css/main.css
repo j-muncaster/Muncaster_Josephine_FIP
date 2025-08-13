@@ -382,11 +382,16 @@ input, textarea {
   position: relative;
 }
 
-.our-story video {
+.video-wrapper {
+  position: relative;
   width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 80px;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* --- END Our Story --- */

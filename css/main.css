@@ -11,23 +11,30 @@
     4. Flavour Info
     5. Health & Ingredients
     6. Our Story
-    7. Customer Reviews
+    7. Reviews
     8. Contact Us
     9. Contact Form
-    10. Footer
+    10. Shop Flavours
+    11. Variety Pack
+    12. Shop in Store
+    13. Footer
 
     Tablet
-    t1. Main Nav
-    t2. Contact Us
-    t3. Contact Form
+    t1. Hero Section
+    t2. Flavour Info
+    t3. Contact Us
+    t4. Contact Form
 
     Desktop
-    d1. Hero Section
-    d2. Flavour Info
-    d3. Reviews
-    d4. Contact Us
-    d5. Footer
-
+    d1. Main Nav
+    d2. Hero Section
+    d3. Flavour Info
+    d4. Health & Ingredients
+    d5. Reviews
+    d6. Contact Us
+    d7. Shop Flavours
+    d8. Shop in Store
+    d9. Footer
  */
 
 
@@ -141,7 +148,7 @@ input, textarea {
 /* --- 3. START Hero Section --- */
 
 .hero-image-con {
-    position: relative;
+  position: relative;
 }
 
 .hero-image-con video {
@@ -190,20 +197,20 @@ input, textarea {
 /* --- 4. START Flavour Info --- */
 
 .wavy-line-hero {
-    width: 100%;
-    max-width: 100%;
-    margin: 25px 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 25px 0;
 }
 
 .wavy-line-hero svg {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .flavour-grid {
   display: grid;
-  grid-template-columns: repeat (4, 1fr);
+  grid-template-columns: 4fr 1fr;
   justify-items: center;
   gap: 20px;
   padding: 20px 0;
@@ -281,7 +288,7 @@ input, textarea {
   max-width: 900px;
   margin: auto;
   padding: 32px;
-  font-style: bold;
+  font-weight: bold;
   color: #001D7E;
 }
 
@@ -372,7 +379,7 @@ input, textarea {
 }
 
 .our-story-con {
-    position: relative;
+  position: relative;
 }
 
 .our-story video {
@@ -469,14 +476,14 @@ input, textarea {
 }
 
 .wavy-line-con {
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wavy-line-con img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .contact-details {
@@ -571,7 +578,7 @@ input, textarea {
 
 /* --- END Contact Form --- */
 
-/* --- START Shop Flavours --- */
+/* --- 10. START Shop Flavours --- */
 
 .flavours-text-con h3 {
   text-transform: uppercase;
@@ -699,7 +706,7 @@ input, textarea {
 
 /* --- END Shop Flavours */
 
-/* --- START Variety Pack --- */
+/* --- 11. START Variety Pack --- */
 
 .variety-pack h3 {
   text-transform: uppercase;
@@ -750,7 +757,7 @@ input, textarea {
 
 /* --- END Variety Pack */
 
-/* --- START Shop in Store --- */
+/* --- 12. START Shop in Store --- */
 
 .stores h3 {
   text-transform: uppercase;
@@ -772,7 +779,7 @@ input, textarea {
 
 /* --- END Shop in Store */
 
-/* --- 10. START Footer --- */
+/* --- 13. START Footer --- */
 
 #footer-hero {
   background-color: #d3d25a;
@@ -831,13 +838,7 @@ input, textarea {
 
 @media screen and (min-width: 768px) {
 
-  /* --- t1. START Main Nav */
-
-  
-
-  /* --- END Main Nav --- */
-
-  /* --- t2. START Hero Section --- */
+  /* --- t1. START Hero Section --- */
 
   .hero-image-con .overlay-text {
     font-size: 100px;
@@ -845,7 +846,7 @@ input, textarea {
 
   /* --- END Hero Section --- */
 
-  /* --- t3. START Flavours --- */
+  /* --- t2. START Flavours --- */
 
  .flavour-grid {
     display: grid;
@@ -871,13 +872,7 @@ input, textarea {
 
   /* --- END Flavours --- */
 
-  /* --- t3. START Health & Ingredients --- */
-
- 
-
-  /* --- END Health & Ingredients --- */
-
-  /* --- t4. START of Contact Us --- */
+  /* --- t3. START of Contact Us --- */
 
   .contact-heading h3 {
     text-align: center;
@@ -903,7 +898,7 @@ input, textarea {
 
  /* --- END of Contact Us --- */ 
  
- /* --- t5. START of Contact Form --- */
+ /* --- t4. START of Contact Form --- */
 
  .contact-section {
     border-radius: 10px;
@@ -981,7 +976,7 @@ input, textarea {
 
   /* --- END Main Nav */
 
-  /* --- d1. START Hero Section --- */
+  /* --- d2. START Hero Section --- */
 
   .overlay-text {
     font-size: 52px;
@@ -995,7 +990,7 @@ input, textarea {
 
   /* --- END Hero Section --- */
 
-  /* --- d2. START Flavour Info --- */
+  /* --- d3. START Flavour Info --- */
 
   .flavour-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -1026,7 +1021,7 @@ input, textarea {
 
   /* --- END Flavour Info --- */
 
-  /* --- d3. START Health & Ingredients ---  */
+  /* --- d4. START Health & Ingredients ---  */
 
    .mobile-only {
     display: none;
@@ -1072,7 +1067,7 @@ input, textarea {
     margin: 16px 0;
   }
 
-  /* --- d3. START Reviews --- */
+  /* --- d5. START Reviews --- */
 
   .circle-quote img {
     width: 180px;
@@ -1086,7 +1081,7 @@ input, textarea {
 
   /* --- END Reviews --- */
 
-  /* --- d4. START Contact Us --- */
+  /* --- d6. START Contact Us --- */
 
   .contact-heading h3 {
     font-size: 50px;
@@ -1112,7 +1107,7 @@ input, textarea {
 
   /* --- END Contact Us --- */
 
-  /* --- START Shop Flavours --- */
+  /* --- d7. START Shop Flavours --- */
 
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -1122,7 +1117,7 @@ input, textarea {
 
   /* --- END Shop Flavours --- */
 
-  /* --- START Find us in Store --- */
+  /* --- d8. START Find us in Store --- */
 
   .stores img {
     max-height: 100px;
@@ -1130,7 +1125,7 @@ input, textarea {
 
   /* --- END Find us in Store */
    
-  /* --- d5. Footer --- */
+  /* --- d9. Footer --- */
 
    #email-signup {
     display: block;
@@ -1170,7 +1165,7 @@ input, textarea {
     background-color: #FDB52A;
   }
 
-   /* d. --- END Footer --- */
+   /* --- END Footer --- */
   }
 
 /* End of Desktop */

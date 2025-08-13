@@ -1,160 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
-    <title>FIP - Term 2 - Orbitz</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.typekit.net/hnb1odn.css">
+        <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+        <title>FIP - Term 2 - Orbitz</title>
+    </head>
 <body>
     <h1 class="hidden">Welcome to Orbitz</h1>
 
         <!-- Main Nav -->
+
         <div id="sticky-nav-con">
-            <header class="grid-con" id="main-header">
-                <nav id="main-nav" class="">
-                    <h2 class="hidden">Main Navigation</h2>
-                    <button id="button"></button>
+            <header id="main-nav">
+                <h2 class="hidden">Main Navigation</h2>
+
+                <button id="button" class="col-span-1"></button>
+                
+                <div id="logo">
+                    <img src="images/orbitz_logo.svg" alt="Orbitz Logo">
+                </div>
+
+                <nav>
+                    <h2 class="hidden">Links Nav</h2>
                     <div id="burger-con">
                         <ul>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Flavours</a></li>
-                            <li><a href="index.html">Orbitz</a></li>
-                            <div id="logo" class="">
-                                <img src="images/" alt="Orbitz Logo">
-                            </div>
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </nav>
 
-                <div class="">
-                    <!-- insert search icon & shopping bag icon -->
+                <div id="header-icons">
+                    <img src="images/search_icon.png" alt="Search Icon">
+                    <img src="images/shopping_icon.png" alt="Shopping Bag Icon">
                 </div>
             </header>
         </div>
 
-        <!-- Contact Us -->
-        <section class="grid-con" id="contact-info">
-            <h2 class="hidden">Contact Us</h2>
-                <div>
-                    <h3>Contact Us</h3>
-                    <!-- insert wiggle line svg -->
-                </div>
-
-            <div>
-                <h2 class="hidden">Phone and Email</h2>
-                    <div class="">
-                        <!-- insert phone icon -->
-                        <h3>Phone</h3><br>
-                            <p><a>1.800.1234</a><br></p>
-                        <!-- insert email icon -->
-                        <h3>Email</h3><br>
-                            <p>contact[at]orbitz.ca</p>
-                    </div>
-            </div>
-        </section>
-
         <!-- Hero Section -->
+
         <section id="hero" class="full-width-grid-con">
             <h2 class="hidden">Orbitz Hero Section</h2>
-            <img
-                sizes="100vw"
-                srcset="
-                images/
-                "
-                src="images/" 
-            alt="Orbitz Hero Image" id="hero-main">
-            <div class="grid-con">
-                <div id="shop-now-hero" class="shop-now">
-                    <p>Shop Now</p>
+            <div class="hero-image-con">
+                <video loop autoplay muted playsinline>
+                    <source src="video/Orbitz_Cinemagraph.mp4" type="video/mp4">
+                </video>
+
+                <div class="overlay-container">
+                    <h2 class="overlay-text">Wellness<br>in Motion</h2>
+                    <a href="shop.html" class="shop-now-btn">Shop Now</a>
                 </div>
             </div>
         </section>
 
-        <!-- Flavour Info Section -->
-        <section id="flavour-info" class="">
+        <!-- Flavour Info -->
+
+        <section id="flavour-info">
             <h2 class="hidden">Orbitz Info Section</h2>
                 <div>
-                    <!-- insert wiggle line svg -->
-                    <!-- insert larger can image -->
-                    <!-- insert ingredients & bubbles -->
-                </div>
-
-                <div class="grid-con">
-                    <div id="learn-more-info" class="learn-more">
-                        <p>Learn More</p>
+                    <div class="wavy-line-hero col-span-full">
+                        <svg width="1440" height="249" viewBox="0 0 1440 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M-37 144.818C144.476 76.8176 574.464 -39.3137 818.286 32.7611C1046.71 100.283 1039.84 173.551 1180.67 223.833C1287.84 262.098 1391.91 215.213 1440 173.551" stroke="#FEBAED" stroke-width="20"/>
+                        </svg>
                     </div>
                 </div>
 
-                <div>
-                    <!-- insert flavours -->
-                </div>
-                
-                <div class="grid-con">
-                    <div id="shop-all-info" class="shop-all">
-                        <p>Shop All</p>
-                    </div>
+                <div class="grid-con flavour-grid">
+                    <h3 class="hidden">Orbitz Can Flavours</h3>
+                    
+                        <div class="circle-wrapper circle-blue col-span-1">
+                            <img src="images/blueberry_img.png" alt="Blueberry Can">
+                        </div>
+
+                        <div class="circle-wrapper circle-green col-span-1">
+                            <img src="images/melon_img.png" alt="Melon Can">
+                        </div>
+
+                        <div class="circle-wrapper circle-pink col-span-1">
+                            <img src="images/raspberry_img.png" alt="Raspberry Can">
+                        </div>
+
+                        <div class="circle-wrapper circle-orange col-span-1">
+                            <img src="images/orange_img.png" alt="Orange" id="orange-can">
+                        </div>
                 </div>
 
-                <div id="hero-video">
-                    <!-- insert video placeholder -->
+                <div class="shop-info-con">
+                    <a href="shop.html" class="shop-now-btn">Shop All</a>
                 </div>
         </section>
 
-        <!-- Customer Reviews Section -->
-        <section class="customer-reviews grid-con">
-            <div>
-                <!-- insert wiggle line svg -->
+        <!-- Health & Ingredients Section - Mobile Only -->
+
+        <section class="ingredients-section mobile-only">
+            <h2>Health & Ingredients</h2>
+            <p>Orbitz is made with your wellness in mind.</p>
+
+            <details class="drop-down-item">
+                <summary>
+                    <img src="images/water-icon.png" alt="Water Icon">
+                    <span>Sparkling Mineral Water</span>
+                    <img src="images/arrow-down-icon.png" alt="Arrow Down Icon" class="arrow">
+                </summary>
+                    <p>Orbitz begins with clean, mineral-rich water—sourced for purity and balance. These naturally occurring minerals, like calcium, magnesium, and potassium, help support hydration, bone health, and energy production. Unlike purified or distilled waters, mineral water contains trace elements that nourish your body on a cellular level. It’s a crisp, refreshing base that brings every flavor of Orbitz to life.</p>
+            </details>
+
+            <details class="drop-down-item">
+                <summary>
+                    <img src="images/orange-icon.png" alt="Orange Slice Icon">
+                    <span>Organic Fruit</span>
+                    <img src="images/arrow-down-icon.png" alt="Arrow Down Icon" class="arrow">
+                </summary>
+                    <p>Each bottle of Orbitz is infused with real organic fruit, chosen for both taste and function. From tangy raspberry to mellow melon, our fruity blends are made without artificial sweeteners or synthetic flavors—just clean, certified organic ingredients. These fruits offer natural antioxidants, subtle sweetness, and a vibrant experience with every sip. It’s nature’s flavor, exactly as it should be.</p>
+            </details>
+
+            <details class="drop-down-item">
+                <summary>
+                    <img src="images/plant-icon.png" alt="Plant Icon">
+                    <span>Chicory Root Fibre</span>
+                    <img src="images/arrow-down-icon.png" alt="Arrow Down Icon" class="arrow">
+                </summary>
+                    <p>Chicory root fibre is one of nature’s most effective prebiotics, and a cornerstone ingredient in Orbitz. Extracted from the root of the chicory plant, this soluble fibre feeds the beneficial bacteria in your gut, helping to support digestion and maintain microbiome balance. It’s gentle, plant-based, and shown to improve regularity and gut health over time. Plus, it blends seamlessly into our sparkling flavors—so all you taste is refreshment.</p>
+            </details>
+
+            <details class="drop-down-item">
+                <summary>
+                    <img src="images/probiotics-icon.png" alt="Prebiotics Icon">
+                    <span>Prebiotics</span>
+                    <img src="images/arrow-down-icon.png" alt="Arrow Down Icon" class="arrow">
+                </summary>
+                    <p>Orbitz delivers a daily dose of prebiotics to help you feel balanced from the inside out. Prebiotics act as fuel for your body’s good bacteria, promoting digestive wellness, improved immunity, and better nutrient absorption. Unlike probiotics, prebiotics are more shelf-stable and consistent, offering gut support without needing refrigeration. With Orbitz, you’re nourishing your microbiome in every bubbly sip.</p>
+            </details>
+
+            <hr class="seperator">
+        </section>
+
+        <!-- Health & Ingredients Section - Desktop Only -->
+
+        <section class="ingredients-section desktop-only">
+            <h2>Health & Ingredients</h2>
+            <p>Orbitz is made with your wellness in mind.</p>
+
+            <div class="ingredient-item">
+                <div class="ingredient-header">
+                    <img src="images/water-icon.png" alt="Water Icon">
+                    <div class="ingredient-text">
+                        <h3>Sparkling Mineral Water</h3>
+                        <p>Orbitz begins with clean, mineral-rich water—sourced for purity and balance. These naturally occurring minerals, like calcium, magnesium, and potassium, help support hydration, bone health, and energy production. Unlike purified or distilled waters, mineral water contains trace elements that nourish your body on a cellular level. It’s a crisp, refreshing base that brings every flavor of Orbitz to life.</p>
+                    </div>
+                </div>
             </div>
 
-            <div id="review-1">
-                <!-- inset review, bubble, and quotation icon -->
-            </div>
-            
-            <div id="review-2">
-                <!-- inset review, bubble, and quotation icon -->
+            <div class="ingredient-item">
+                <div class="ingredient-header">
+                    <img src="images/orange-icon.png" alt="Orange Slice Icon">
+                    <div class="ingredient-text">
+                        <h3>Organic Fruit</h3>
+                        <p>Each bottle of Orbitz is infused with real organic fruit, chosen for both taste and function. From tangy raspberry to mellow melon, our fruity blends are made without artificial sweeteners or synthetic flavors—just clean, certified organic ingredients. These fruits offer natural antioxidants, subtle sweetness, and a vibrant experience with every sip. It’s nature’s flavor, exactly as it should be.</p>
+                    </div>
+                </div>
             </div>
 
-            <div id="review-3">
-                <!-- inset review, bubble, and quotation icon -->
+            <div class="ingredient-item">
+                <div class="ingredient-header">
+                    <img src="images/plant-icon.png" alt="Plant Icon">
+                    <div class="ingredient-text">
+                        <h3>Chicory Root Fibre</h3>
+                        <p>Chicory root fibre is one of nature’s most effective prebiotics, and a cornerstone ingredient in Orbitz. Extracted from the root of the chicory plant, this soluble fibre feeds the beneficial bacteria in your gut, helping to support digestion and maintain microbiome balance. It’s gentle, plant-based, and shown to improve regularity and gut health over time. Plus, it blends seamlessly into our sparkling flavors—so all you taste is refreshment.</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="ingredient-item">
+                <div class="ingredient-header">
+                    <img src="images/probiotics-icon.png" alt="Prebiotics Icon">
+                    <div class="ingredient-text">
+                        <h3>Prebiotics</h3>
+                        <p>Orbitz delivers a daily dose of prebiotics to help you feel balanced from the inside out. Prebiotics act as fuel for your body’s good bacteria, promoting digestive wellness, improved immunity, and better nutrient absorption. Unlike probiotics, prebiotics are more shelf-stable and consistent, offering gut support without needing refrigeration. With Orbitz, you’re nourishing your microbiome in every bubbly sip.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+
+        <section class="our-story">
+            <h2 class="hidden">Our Story</h2>
+
+                <div class="wavy-line-reviews col-span-full">
+                    <svg width="1440" height="249" viewBox="0 0 1440 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-37 144.818C144.476 76.8176 574.464 -39.3137 818.286 32.7611C1046.71 100.283 1039.84 173.551 1180.67 223.833C1287.84 262.098 1391.91 215.213 1440 173.551" stroke="#FEBAED" stroke-width="20"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <h3>Our Story</h3>
+                        <p> Born from Balance. Crafted by Women. Rooted in Wellness.<br>
+                            Orbitz began as a simple idea: what if feeling good could feel joyful, fizzy, and full of nature’s brilliance?<br>
+                            Created by women who wanted more from their daily drink—a blend of nourishment, energy, and elegance—Orbitz was 
+                            imagined as a ritual of restoration. Something that didn’t just hydrate, but supported the whole self: gut, mood, body, and spirit.<br>
+                            Backed by science and inspired by nature, each bottle combines prebiotic fiber with organic botanicals and fruity effervescence to help 
+                            women bloom through busy days, cycles, and seasons.<br>
+                            We believe wellness should orbit around you—your flow, your pace, your glow. With every sip of Orbitz, you’re not just drinking—you’re 
+                            thriving from within. It’s wellness in motion.
+                        </p>
+                </div>
+
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/VPU7ZSm7cFA?si=XvHCcqJWFw1uogp1" 
+                        title="YouTube video player" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+        </section>
+        
+        <!-- Customer Reviews -->
+
+        <section class="customer-reviews">
+            <h2 class="hidden">Customer Reviews</h2>
+
+                <h3>Customer Reviews</h3>
+                <div class="reviews grid-con">
+                    <div class="col-span-full">
+                        <div class="circle-quote">
+                            <img src="images/review_bubble.png" alt="Quote Bubble">
+                            <p class="quote-text">“My new go-to for daily wellness!”<br>I've tried so many gut health drinks, but Orbitz is the only one that actually tastes amazing and makes me feel great. The raspberry flavor is so refreshing, and I’ve noticed a real difference in my digestion and energy. It’s like self-care in a can. Love that it’s designed by women for women, too!<br><span>- Janet</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews grid-con">
+                    <div class="col-span-full">
+                        <div class="circle-quote-right">
+                            <p class="quote-text">“So good, I look forward to it every day.”<br>Orbitz is pure magic. I drink one mid-morning, and it gives me the perfect boost without the crash. The melon flavor is light and bubbly, and I’ve been way less bloated since adding it to my routine. It’s wellness that actually fits my lifestyle—fun, fizzy, and functional.<br><span>- Becca</span></p>
+                            <img src="images/review_bubble.png" alt="Quote Bubble">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews grid-con">
+                    <div class="col-span-full">
+                        <div class="circle-quote">
+                            <img src="images/review_bubble.png" alt="Quote Bubble">
+                            <p class="quote-text">Orbitz keeps me feeling fresh and balanced.”<br>I’ve been sipping Orbitz during my afternoon slump instead of reaching for coffee, and WOW—game changer. I’m obsessed with the blueberry one. It's fruity and fizzy without being too sweet, and I love that it supports my gut health with real ingredients. More energy, less stress.<br><span>- Stacey</span></p>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <!-- Footer -->
+
         <footer id="footer-hero">
             <div class="grid-con">
-                <nav id="footer-nav" class="">
+
+                <nav id="footer-nav">
                     <h2 class="hidden">Footer Nav</h2>
+                
+                    <h2>Home</h2>
                         <ul>
-                            <h3>Shop</h3>
-                                <li><a class="#">Shop Orbitz</a></li>
-                                <li><a href="#">Find in Store</a></li>
-                            <h3>Learn</h3>
-                                <li><a href="#">Our Story</a></li>
-                                <li><a href="#">Health & Ingredients</a></li>
-                            <h3>More</h3>
-                                <li><a href="#">Contact Us</a></li>
+                            <li><a href="index.html">Flavours</a></li>
+                            <li><a href="index.html">Health & Ingredients</a></li>
+                            <li><a href="index.html">Our Story</a></li>
+                            <li><a href="index.html">Customer Reviews</a></li>
+                        </ul>
+
+                    <h2>Shop</h2>
+                        <ul>
+                            <li><a href="shop.html">Shop Orbitz</a></li>
+                            <li><a href="shop.html">Find in Store</a></li>
+                        </ul>
+
+                    <h2>More</h2>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                 </nav>
 
-                <div id="contact-hero-form" class="">
+                <div id="email-signup" class="l-col-span-4 l-col-start-6">
                     <h3>Join the Orbitz Journey</h3>
-                        <p>Be the first to know about news, upcoming releases & more!</p>
-                    <form action="#" method="post" enctype="text/plain">
-                        <input name="contactInfo" type="text" required placeholder="Enter Email">
+                    <p>Be the first to know about news, upcoming releases & more!</p>
+                    <form action="#" method="post">
+                        <input name="contactInfo" type="email" required placeholder="Enter Email">
+                        <input name="submit" type="submit" value="Submit">
+                    </form>
                 </div>
 
-                <div>
-                    <!-- insert social media icons -->
+                <div id="social-icons" class="col-span-full">
+                    <a href="#"><img src="images/instagram_icon.png" alt="Instagram Icon"></a>
+                    <a href="#"><img src="images/tiktok_icon.png" alt="TikTok Icon"></a>
+                    <a href="#"><img src="images/youtube_icon.png" alt="YouTube Icon"></a>
                 </div>
 
-                <div id="footer-privacy"
-                    class="">
-                    <p id="policy">©2025 Orbitz. All Rights Reserved.</p>
+                <div id="footer-privacy" class="col-span-full">
+                    <p>© 2025 Orbitz</p>
                 </div>
             </div>
         </footer>

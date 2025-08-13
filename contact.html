@@ -3,112 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.typekit.net/hnb1odn.css">
     <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
     <title>Orbitz Contact Page</title>
 </head>
 
-<!-- any empty classes are for col-spans -->
-
 <body>
     <h1 class="hidden">Welcome to Orbitz</h1>
 
-        <!-- Main Nav -->
-        <div id="sticky-nav-con">
-            <header class="grid-con" id="main-header">
-                <nav id="main-nav" class="">
-                    <h2 class="hidden">Main Navigation</h2>
-                    <button id="button"></button>
+    <!-- Main Nav -->
+
+    <div id="sticky-nav-con">
+            <header id="main-nav">
+                <h2 class="hidden">Main Navigation</h2>
+
+                <button id="button" class="col-span-1"></button>
+                
+                <div id="logo">
+                <a href="index.html">
+                    <img src="images/orbitz_logo.svg" alt="Orbitz Logo">
+                </a>
+                </div>
+
+                <nav>
+                    <h2 class="hidden">Link Nav</h2>
                     <div id="burger-con">
                         <ul>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Flavours</a></li>
-                            <li><a href="index.html">Orbitz</a></li>
-                            <div id="logo" class="">
-                                <img src="images/" alt="Orbitz Logo">
-                            </div>
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </nav>
 
-                <div class="">
-                    <!-- insert search icon & shopping bag icon -->
+                <div id="header-icons">
+                    <img src="images/search_icon.png" alt="Search Icon">
+                    <img src="images/shopping_icon.png" alt="Shopping Bag Icon">
                 </div>
             </header>
-        </div>
+    </div>
 
-        <!-- Contact Us -->
-        <section class="grid-con" id="contact-info">
-            <h2 class="hidden">Contact Us</h2>
-                <div>
-                    <h3>Contact Us</h3>
-                    <!-- insert wiggle line svg -->
+    <div id="contact-image-con">
+        <img src="images/girl_with_orbitz.jpg" alt="Girl Holding a Can of Orbitz">
+    </div>
+    
+    <!-- Contact Us -->
+
+    <section class="grid-con" id="contact-info">
+        <h2 class="hidden">Contact Us</h2>
+            <div class="contact-heading col-span-full">
+                <h3>Contact Us</h3>
+                <div class="wavy-line-con col-span-4">
+                    <img src="images/wavy_line.svg" alt="Wavy Line Decoration">
                 </div>
+            </div>
 
-            <div>
+            <div class="contact-details col-span-full">
                 <h2 class="hidden">Phone and Email</h2>
-                    <div class="">
-                        <!-- insert phone icon -->
+                    <div class="contact-method col-span-2">
+                        <img src="images/phone_icon.png" alt="Phone Icon">
                         <h3>Phone</h3><br>
-                            <p><a>1.800.1234</a><br></p>
-                        <!-- insert email icon -->
+                            <p>1.800.1234</p>
+                    </div>
+                    <div class="contact-method col-span-2">
+                        <img src="images/email_icon.png" alt="Email Icon">
                         <h3>Email</h3><br>
-                            <p>contact[at]orbitz.ca</p>
+                            <p>contact@orbitz.ca</p>
                     </div>
             </div>
-        </section>
+     </section>
 
-        <!-- Contact Form -->
-        <section class="grid-con">
-            <h2 class="hidden">Contact Form</h2>
-                <div id="contact-form" class="">
-                    <form action="#" method="post" enctype="text/plain">
-                        <input name="fullName" type="text" required placeholder="Name">
-                        <input name="contactInfo" type="text" required placeholder="Email">
-                        <textarea name="msg" placeholder="Message"></textarea>
-                        <input name="submit" type="submit" value="Send">
-                    </form>
-                </div>
-            </section>
+    <!-- Contact Form -->
 
-            <!-- Footer -->
-            <footer id="footer-hero">
-                <div class="grid-con">
-                    <nav id="footer-nav" class="">
-                        <h2 class="hidden">Footer Nav</h2>
+    <section class="grid-con contact-section">
+        <h2 class="col-span-full">Get in Touch with Us</h2>
+            <p class="col-span-full">If you want to get in contact with us directly, fill out this form :</p>
+
+        <div id="contact-form" class="col-span-4 col-start-1">
+            <form action="#" method="post" enctype="text/plain">
+                <input name="fullName" type="text" required placeholder="Name">
+                <input name="contactInfo" type="text" required placeholder="Email Address">
+                <textarea name="msg" placeholder="Message"></textarea>
+                <input name="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer-hero">
+        <div class="grid-con">
+
+            <nav id="footer-nav">
+                <h2 class="hidden">Footer Nav</h2>
+                
+                <h2>Home</h2>
                         <ul>
-                            <h3>Shop</h3>
-                                <li><a class="#">Shop Orbitz</a></li>
-                                <li><a href="#">Find in Store</a></li>
-                            <h3>Learn</h3>
-                                <li><a href="#">Our Story</a></li>
-                                <li><a href="#">Health & Ingredients</a></li>
-                            <h3>More</h3>
-                                <li><a href="#">Contact Us</a></li>
+                            <li><a href="index.html">Flavours</a></li>
+                            <li><a href="index.html">Health & Ingredients</a></li>
+                            <li><a href="index.html">Our Story</a></li>
+                            <li><a href="index.html">Customer Reviews</a></li>
                         </ul>
-                    </nav>
 
-                    <div id="contact-hero-form" class="">
-                        <h3>Join the Orbitz Journey</h3>
-                            <p>Be the first to know about news, upcoming releases & more!</p>
-                        <form action="#" method="post" enctype="text/plain">
-                            <input name="contactInfo" type="text" required placeholder="Enter Email">
-                    </div>
+                    <h2>Shop</h2>
+                        <ul>
+                            <li><a href="shop.html">Shop Orbitz</a></li>
+                            <li><a href="shop.html">Find in Store</a></li>
+                        </ul>
 
-                    <div>
-                        <!-- insert social media icons -->
-                    </div>
+                    <h2>More</h2>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+            </nav>
 
-                    <div id="footer-privacy"
-                        class="">
-                        <p id="policy">©2025 Orbitz. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </footer>
+            <div id="email-signup" class="l-col-span-4 l-col-start-6">
+                <h3>Join the Orbitz Journey</h3>
+                <p>Be the first to know about news, upcoming releases & more!</p>
+                <form action="#" method="post">
+                    <input name="contactInfo" type="email" required placeholder="Enter Email">
+                    <input name="submit" type="submit" value="Submit">
+                </form>
+            </div>
 
-        <script src="js/main.js"></script>
+            <div id="social-icons" class="col-span-full">
+                <a href="#"><img src="images/instagram_icon.png" alt="Instagram Icon"></a>
+                <a href="#"><img src="images/tiktok_icon.png" alt="TikTok Icon"></a>
+                <a href="#"><img src="images/youtube_icon.png" alt="YouTube Icon"></a>
+            </div>
+
+            <div id="footer-privacy" class="col-span-full">
+                <p>© 2025 Orbitz</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -24,6 +24,7 @@
     t2. Flavour Info
     t3. Contact Us
     t4. Contact Form
+    t5. Our
 
     Desktop
     d1. Main Nav
@@ -115,6 +116,8 @@ input, textarea {
   padding: 10px 0 10px 0;
   text-align: center;
   color: #0B1E6E;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 #main-nav ul li:last-child {
@@ -210,10 +213,12 @@ input, textarea {
 
 .flavour-grid {
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  padding: 20px 0;
+  justify-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .circle-wrapper {
@@ -223,15 +228,15 @@ input, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .circle-wrapper img {
   width: 200px;
   height: auto;
   object-fit: contain;
-  display: block;
 }
+
 
 .circle-blue {
   background: #76B3D0;
@@ -288,13 +293,13 @@ input, textarea {
   max-width: 900px;
   margin: auto;
   padding: 32px;
-  font-weight: bold;
   color: #001D7E;
 }
 
 .ingredients-section h2 {
   text-align: center;
   font-size: 30px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -437,13 +442,15 @@ input, textarea {
   font-size: 16px;
 }
 
-.wavy-line-reviews {
+.wavy-line-reverse {
   width: 100%;
   max-width: 100%;
+  margin: 25px 0;
 }
 
-.wavy-line-reviews svg {
+.wavy-line-reverse svg {
   width: 100%;
+  height: auto;
   display: block;
   transform: scaleX(-1);
 }
@@ -858,6 +865,7 @@ input, textarea {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-items: center;
+    overflow: visible;
   }
 
   .circle-wrapper {
@@ -869,10 +877,9 @@ input, textarea {
     width: 350px;
   }
 
-  .hide-mobile {
+  .circle-blue,
+  .circle-orange {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   /* --- END Flavours --- */
@@ -910,6 +917,26 @@ input, textarea {
   }
 
  /* --- END of Contact Form --- */
+
+ /* --- t5. START Our Story --- */
+
+ .wavy-line-reverse-con {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .wavy-line-reverse-con img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+ /* --- END Our Story --- */
 }
 
 /* End of Tablet */
@@ -971,7 +998,8 @@ input, textarea {
 
   #burger-con ul li a {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 24px;
     color: #0B1E6E;
   }
 
